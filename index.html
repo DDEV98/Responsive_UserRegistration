@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Registration</h1>
+        <p class="subtitle">Please fill in all required fields</p>
+
+        <div class="success-message" id="successMessage">
+            ✓ Registration successful! Your details have been saved.
+        </div>
+
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="fullName">Full Name <span class="required">*</span></label>
+                <input type="text" id="fullName" placeholder="Enter your full name">
+                <div class="error-message" id="fullNameError">Please enter a valid name (alphabets only)</div>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address <span class="required">*</span></label>
+                <textarea id="address" placeholder="Enter your address"></textarea>
+                <div class="error-message" id="addressError">Address is required</div>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile Number <span class="required">*</span></label>
+                <input type="tel" id="mobile" placeholder="Enter 10-digit mobile number" maxlength="10">
+                <div class="error-message" id="mobileError">Please enter a valid 10-digit mobile number</div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email ID <span class="required">*</span></label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <div class="error-message" id="emailError">Please enter a valid email address</div>
+            </div>
+
+            <div class="form-group">
+                <label>Gender <span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="others" name="gender" value="Others">
+                        <label for="others">Others</label>
+                    </div>
+                </div>
+                <div class="error-message" id="genderError">Please select a gender</div>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth <span class="required">*</span></label>
+                <input type="date" id="dob">
+                <div class="error-message" id="dobError">Please select your date of birth</div>
+            </div>
+
+            <button type="button" class="btn btn-preview" id="previewBtn" disabled>Preview Details</button>
+            <button type="submit" class="btn btn-submit" id="submitBtn" disabled>Register</button>
+        </form>
+	</div>
+
+    <div class="modal" id="previewModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Preview Your Details</h2>
+            </div>
+            <div id="previewContent"></div>
+            <div class="modal-actions">
+                <button type="button" class="btn btn-confirm" id="confirmBtn">Confirm & Submit</button>
+                <button type="button" class="btn btn-cancel" id="cancelBtn">Edit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link the external script here -->
+    <script src="script.js"></script>
+</body>
+</html>
