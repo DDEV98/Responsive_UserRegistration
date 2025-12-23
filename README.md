@@ -42,7 +42,7 @@ A stunning, fully responsive user registration and login system featuring **Thre
 
 ## 🚀 Live Demo
 
-👉 **[View Live Demo]([(https://github.com/DDEV98/Responsive_UserRegistration)]**
+👉 **[View Live Demo](https://storied-muffin-234c96.netlify.app/)**
 
 ---
 
