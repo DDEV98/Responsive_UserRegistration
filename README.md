@@ -42,7 +42,7 @@ A stunning, fully responsive user registration and login system featuring **Thre
 
 ## 🚀 Live Demo
 
-👉 **[View Live Demo](https://ddev98.github.io/futuristic-registration-system/)**
+👉 **[View Live Demo]([(https://github.com/DDEV98/Responsive_UserRegistration)]**
 
 ---
 
